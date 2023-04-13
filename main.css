@@ -1,0 +1,263 @@
+
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+}
+
+main{
+    height: 95vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    border: none;
+}
+
+.article-preview{
+    width: 24.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 90%;
+    border-radius: 8% 8% 8% 8%;
+    background-color: white;
+}
+
+.image-container{
+    width:100%;
+   
+}
+
+.image-container img{
+    width:100%;
+    border-radius: 8% 8% 0 0;
+}
+
+.article-title{
+    font-size: 1.1rem;
+}
+
+ .article-content > *{
+    margin: 1.2rem;
+}
+
+.article-paragraph{
+    width: 80%;
+    text-align: start;
+    font-size: 1.05rem;
+    color: hsl(214, 17%, 51%);
+}
+.article-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+.article-info{
+    display: flex;
+}
+
+.article-author__avatar{
+    border-radius: 50%;
+    height: 3rem;
+    width:3rem;
+    margin-right: 1rem;
+    justify-self: flex-start;
+}
+
+.article-details{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    margin-right:0.5rem;
+    justify-content: space-between;
+}
+
+.article-details p{
+    margin-top: 0.25rem;
+    margin-bottom:0;
+}
+
+.article-details__date{
+    color:hsl(214, 17%, 51%);
+}
+
+.article-author__name{
+    font-weight: 700;
+}
+
+.article-bottom__share{
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: hsl(210, 46%, 95%);
+    color: hsl(212, 23%, 69%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5rem;
+    position: absolute;
+    right: 2.5rem;
+}
+
+.article-bottom__share:hover{
+    cursor: pointer;
+    height: 2.6rem;
+    width:2.6rem;
+}
+
+.article-bottom__links{
+    background-color: hsl(217, 19%, 35%);
+    display:flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    color: hsl(212, 23%, 69%);
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 1rem;
+    z-index: 2;
+    
+}
+
+.article-bottom__links > img,
+.artcile-bottom__links > p {
+    margin-left: 1rem;
+}
+
+.article-bottom__share.clicked{
+    background-color: hsl(212, 23%, 69%);
+    margin-left: 5rem;
+}
+
+.article-bottom__share.clicked:hover{
+    height: 2.6rem;
+    width:2.6rem;
+}
+
+.article-bottom__share.clicked img{
+    color: white !important;
+}
+
+.hide{
+    display:none;
+}
+
+.show{
+    margin:0;
+}
+
+footer{
+    height: 5vh;
+}
+
+@media screen and (min-width: 1440px){
+    .article-preview{
+        width: 70rem;
+        flex-direction: row; 
+        border-radius: 3.95rem; 
+        font-size: 1.5rem;
+        overflow: visible;
+    }
+
+    .image-container{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 333.542px;
+        min-width:395.594px;
+        width: 55%;
+        padding: 0;
+       
+    }
+    .image-container> img{
+        min-width:395.594px;
+        min-height:421.458px;
+        width: 100%; 
+        border-radius: 3.5rem 0 0 3.5rem;
+    }
+
+    .article-content{
+        margin-left: 2rem;
+    }
+    .article-title{
+        font-size: 2rem;
+    }
+
+    .article-bottom{
+        width:100%;
+        position: relative;
+        justify-content: space-between;
+    }
+    .article-info{
+        width:100%;
+    }
+
+    .article-author__avatar{
+        height: 4rem;
+        width: 4rem;
+    }
+    .article-bottom__share{
+        position: absolute;
+        right: 6.5rem;
+        height: 4rem;
+        width:4rem;
+    }
+
+    .article-bottom__share:hover{
+        cursor: pointer;
+        height: 4.1rem;
+        width:4.1rem;
+    }
+    
+    .article-bottom__share-icon{
+        width:50%;
+    }
+    
+    .article-bottom__share.clicked{
+        margin: 0;
+    }
+
+    .article-bottom__share.clicked:hover{
+        width: 4.1rem;
+        height: 4.1rem;
+        
+    }
+
+    .article-bottom__links:nth-of-type(2){
+        letter-spacing: .5rem;
+        width: auto;
+        padding: 1rem 2.5rem;
+        position: absolute;
+        top: -8.5rem;
+        right: -10rem;
+        margin-right: 7rem;
+        z-index: 5000;
+        border-radius: 2rem;
+    }
+
+    .article-bottom__links:nth-of-type(2) img{
+        width: 1.75rem;
+        height: 1.75rem;
+        margin-right: 1rem;
+    }
+
+    .arrow-style{
+        background-color: hsl(217, 19%, 35%);
+        transform: rotateZ(45deg);
+        position: absolute;
+        left:47%;
+        bottom:-1rem;
+        height: 2rem;
+        width:2rem;
+    }
+    
+}
